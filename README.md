@@ -21,29 +21,34 @@
 
 
 ## 🧪 Basic WSL commands
-- wsl – Launches your default Linux distro.
-- wsl -l – Lists installed Linux distributions.
-- wsl --install -d <distro> – Installs a specific Linux distro.
-- wsl -d <distro> – Runs a specific distribution.
-- wsl --set-default-version 2 – Sets WSL 2 as the default.
-- wsl --update – Updates the WSL kernel.
-- wsl --status – Shows WSL version info and default distro.
-- wsl --terminate <distro> - Shutsdown the specified distro.
-- wsl --shutdown - Shuts down all running distros.
+- `wsl` – Launches your default Linux distro.
+- `wsl -l` – Lists installed Linux distributions.
+- `wsl --install -d <distro>` – Installs a specific Linux distro.
+- `wsl -d <distro>` – Runs a specific distribution.
+- `wsl --set-default-version 2` – Sets WSL 2 as the default.
+- `wsl --update` – Updates the WSL kernel.
+- `wsl --status` – Shows WSL version info and default distro.
+- `wsl --terminate <distro>` - Shutsdown the specified distro.
+- `wsl --shutdown` - Shuts down all running distros.
 
 ## 🛠️ Common first-time setup tips
 - Set up a user account when prompted after first launch.
 - Once the Linux instance is launched, run: <pre> ```sudo apt update && sudo apt upgrade -y ``` </pre>
-- All Linux files will be located here: **/home/yourusername/**
-- All Windows files will be located here: **/mnt/c/Users/yourname/**
+- All Linux files will be located here: `/home/yourusername/`
+- All Windows files will be located here: `/mnt/c/Users/yourname/`
 
-## What you'll need
+## 🔹 What you'll need
 - Windows Terminal
 - Windows 10 or higher
 - x64 or ARM64
 - Enable virtualization in BIOS/UEFI
 
-## Steps
+## 📝 Steps
 - Open **PowerShell as Administrator** and run: <pre> ```wsl --install ``` </pre>
-- `wsl`
+- Verify that WSL is installed: <pre> ```wsl --status ``` </pre>
+- See all the available Linux distributions: <pre> ```wsl --list --online ``` </pre>
+- Install one: <pre> ```wsl --install -d <distro>``` </pre>
+- You may need to restart your machine
+- Run: <pre> ```wsl.exe -d <distro>``` </pre>
+  ![Running a distro](https://github.com/user-attachments/assets/ec593fd2-4ad3-4822-abc2-5135dda530a1)
 
