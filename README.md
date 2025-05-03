@@ -1,4 +1,4 @@
-# Installing-WSL
+# 🐧💻 Installing-WSL
 
 ### 🐧 What is WSL?
 - WSL stands for Windows Subsystem for Linux.
