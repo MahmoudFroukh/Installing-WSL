@@ -23,6 +23,7 @@
 ## 🧪 Basic WSL commands
 - `wsl` – Launches your default Linux distro.
 - `wsl -l` – Lists installed Linux distributions.
+- `wsl -l -v` - List installed distros and more.
 - `wsl --install -d <distro>` – Installs a specific Linux distro.
 - `wsl -d <distro>` – Runs a specific distribution.
 - `wsl --set-default-version 2` – Sets WSL 2 as the default.
